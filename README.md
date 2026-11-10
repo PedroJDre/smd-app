@@ -15,4 +15,4 @@ Personal finance ledger for the command line: balances, spending and monthly rep
 
 ## Author
 
-PedroJDre
+Pedro Dreyer (PedroJDre)
