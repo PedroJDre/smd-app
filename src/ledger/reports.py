@@ -26,7 +26,6 @@ def is_spending(t: Transaction) -> bool:
     return t.amount < 0 and t.category != TRANSFER
 
 
-
 def balances(transactions: Iterable[Transaction]) -> dict[str, Decimal]:
     """The balance of each account, by account name, sorted by name."""
     # TODO 2: add up the amounts of each account with totals_by, and return the
@@ -34,7 +33,6 @@ def balances(transactions: Iterable[Transaction]) -> dict[str, Decimal]:
     #         how to call totals_by with a key.
     totals = totals_by(transactions, key=lambda t: t.account)
     return dict(sorted(totals.items()))
-
 
 
 def spending_by_category(transactions: Iterable[Transaction]) -> dict[str, Decimal]:
